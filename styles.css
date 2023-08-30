@@ -1,0 +1,66 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #333;
+}
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Encabezado de la tienda */
+.black-rectangle {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* Menú de navegación en el encabezado */
+.menu-item {
+  margin-left: 10px;
+}
+
+/* Tarjetas de productos */
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 10px;
+}
+.card-text {
+  color: #666;
+}
+.card-price {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}

@@ -1,74 +1,110 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de motos Online</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
     .black-rectangle {
       background-color: black;
       color: white;
-      padding: 1 px;
+      padding: 10px;
       font-size: 18px;
-      width: 100%;
-
       display: flex;
-      justify-content: flex-end;
-
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .menu-item {
-      margin-left: 10px;
+    .menu {
+      display: flex;
+      gap: 10px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    table td {
+      padding: 10px;
+    }
+
+    .card-body {
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product-description {
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .product-price {
+      font-size: 20px;
+      color: #007bff;
+      margin-top: 10px;
     }
   </style>
 </head>
-
 <body>
-
-  <div class="black-rectangle text-left white">
+  <div class="black-rectangle">
     Tecnicentro Andri Racing
-    <div class="container">
-      <div class="row py-2">
-
-      </div>
+    <div class="menu">
+      <div class="menu-item">Home</div>
+      <div class="menu-item">About</div>
+      <div class="menu-item">Services</div>
+      <div class="menu-item">Contact</div>
     </div>
   </div>
-  <div class="black-rectangle text-white">
-    <div class="menu-item">Home</div>
-    <div class="menu-item">About</div>
-    <div class="menu-item">Services</div>
-    <div class="menu-item">Contact</div>
-  </div>
 
-  <div class="container mt-4">
-
-    <h1 class="text-left">Compra tu moto</h1>
-    <table border="1">
+  <div class="container">
+    <h1>Compra tu moto</h1>
+    <table>
       <tr>
-        <td>
-          <a href="index.html">Yamaha</a>
-          </li>
-        </td>
+        <td><a href="index.html">Yamaha</a></td>
       </tr>
       <tr>
-        <td> <a href="UMA.html">UMA</a>
-        </td>
+        <td><a href="UMA.html">UMA</a></td>
       </tr>
       <tr>
-        <td> <a href="honda.html">Honda</a>
+        <td><a href="honda.html">Honda</a></td>
       </tr>
     </table>
-    <div class="card-body text-center"> 
 
-      En el menu de arriba selecciona la marca de moto que quieres comprar
+    <div class="card-body">
+      En el menú de arriba, selecciona la marca de moto que quieres comprar.
     </div>
-    <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2022/06/1-Boxer-ct-100-es-azul.png" alt="BOXER CT 100" width="900" height="666">
+    <img src="https://grupouma.com/colombia/wp-content/uploads/sites/2/2022/06/1-Boxer-ct-100-es-azul.png" alt="BOXER CT 100">
 
-    <div class="card-body text-center">BOXER CT 100</div>
-    Una motocicleta para trabajo. 
-    Mucha calidad y bajo consumo de gasolina. 
-    <br>Valor: $ 6.500,000 COP<br>
-
+    <div class="card-body">
+      <h2>BOXER CT 100</h2>
+      <p class="product-description">Una motocicleta para trabajo. Mucha calidad y bajo consumo de gasolina.</p>
+      <p class="product-price"><strong>Valor: $6,500,000 COP</strong></p>
+    </div>
+  </div>
 </body>
-<title>Tienda de motos Online</title>
-
 </html>
